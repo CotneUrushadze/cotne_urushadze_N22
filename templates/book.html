@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}books{% endblock %}
+
+{% block content %}
+    {% if book_id == book["id"] %}
+        {% for key, value in book.items() %}
+            {{key}}: {{value}}<br>
+        {% endfor %}
+    {% endif %}
+
+
+{% endblock %}
